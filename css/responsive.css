@@ -25,3 +25,34 @@
     clear: both;
   }
 }
+
+@media screen and (min-width: 660px) {
+  header {
+    border-bottom: 5px solid #44596E;
+    float: left;
+    width: 100%;
+  }
+
+  #logo {
+    float: left;
+    margin-left: 5%;
+    text-align: left;
+  }
+
+  nav {
+    background: none;
+    float: right;
+    font-size: 1.1em;
+    margin: 20px 5%;
+  }
+
+  #gallery li {
+    float: left;
+    margin: 1.5%;
+    max-width: 30%;
+  }
+
+  #gallery li:nth-child(4n) {
+    clear: left;
+  }
+}
