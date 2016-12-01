@@ -53,24 +53,24 @@ header {
 
 nav {
   background-color: #44596E;
+  margin: 20px 0;
 }
 
 nav ul {
   list-style: none;
-  padding: 10px;
+  padding: 10px 0;
   margin: 0;
 }
 
 nav li {
   display: inline-block;
-  padding: 0 10px;
-  margin: 0 5px;
 }
 
 nav a {
   color: #fafafa;
   font-weight: bold;
   text-decoration: none;
+  padding: 10px;
 }
 
 nav a.selected {
