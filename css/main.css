@@ -4,7 +4,7 @@ body {
   background-color: #fafafa;
 }
 
-section {
+#wrapper {
   max-width: 940px;
   margin: 0 auto;
   padding: 5%;
@@ -90,7 +90,11 @@ nav a.selected {
 
 #gallery li {
   background-color: #ecf0f1;
-  margin: 2.5%;
+  margin: 2.5% 0 10%;
+}
+
+#gallery li:last-child {
+  margin-bottom: 0;
 }
 
 #gallery img {
