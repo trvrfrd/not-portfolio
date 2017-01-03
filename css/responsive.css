@@ -5,7 +5,7 @@
     margin: 2.5%;
   }
 
-  #gallery li:nth-child(3n) {
+  #gallery li:nth-child(2n + 1) {
     clear: left;
   }
 
@@ -28,6 +28,14 @@
   footer {
     clear: both;
   }
+
+  /*
+  h3 top margin doesn't collapse with header bottom margin in two-column Contact
+  page layout because of floated sections or whatever
+  */
+  h3 {
+    margin-top: 0;
+  }
 }
 
 @media screen and (min-width: 660px) {
@@ -35,6 +43,11 @@
     border-bottom: 5px solid #44596E;
     float: left;
     width: 100%;
+  }
+
+  #header-wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
   }
 
   #logo {
@@ -47,7 +60,7 @@
     background: none;
     float: right;
     font-size: 1.1em;
-    margin: 20px 5%;
+    margin: 25px 5%;
   }
 
   #gallery li {
@@ -56,11 +69,12 @@
     max-width: 30%;
   }
 
-  #gallery li:nth-child(3n) {
+  /* undo two-column row clearing from "medium-width" layout */
+  #gallery li:nth-child(2n + 1) {
     clear: none;
   }
 
-  #gallery li:nth-child(4n) {
+  #gallery li:nth-child(3n + 1) {
     clear: left;
   }
 }
