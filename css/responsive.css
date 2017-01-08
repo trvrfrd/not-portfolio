@@ -1,18 +1,15 @@
 /* MEDIUM-WIDTH LAYOUT */
 @media screen and (min-width: 480px) {
   #gallery li {
-    float: left;
-    max-width: 45%;
+    display: inline-block;
+    max-width: 44.5%;
     margin: 2.5%;
-  }
-
-  #gallery li:nth-child(2n + 1) {
-    clear: left;
+    vertical-align: top;
   }
 
   #profile-photo {
     float: left;
-    margin: 0 5% 80px 0;
+    margin: 0 5% 10px 0;
     max-width: 150px;
   }
 
@@ -66,17 +63,6 @@
   }
 
   #gallery li {
-    float: left;
     margin: 1.5%;
-    max-width: 30%;
+    max-width: 29.5%;
   }
-
-  /* undo two-column row clearing from "medium-width" layout */
-  #gallery li:nth-child(2n + 1) {
-    clear: none;
-  }
-
-  #gallery li:nth-child(3n + 1) {
-    clear: left;
-  }
-}
