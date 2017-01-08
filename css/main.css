@@ -4,8 +4,8 @@ body {
   margin: 0;
 }
 
-#wrapper {
-  margin: 0 auto;
+#content {
+  margin: 20px auto;
   max-width: 940px;
   padding: 0 5% 0 5%;
 }
@@ -25,7 +25,7 @@ a {
 
 header {
   background-color: #2980b9;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   padding-top: 5px;
   text-align: center;
 }
@@ -53,7 +53,6 @@ header {
 
 nav {
   background-color: #44596E;
-  margin: 20px 0;
 }
 
 nav ul {
@@ -92,6 +91,10 @@ nav a.selected {
   margin: 2.5% 0 10%;
 }
 
+#gallery li:last-child {
+  margin-bottom: 25px;
+}
+
 #gallery img {
   max-width: 100%;
 }
@@ -99,6 +102,11 @@ nav a.selected {
 #gallery p {
   margin: 0;
   padding: 3%;
+}
+
+#gallery h3 {
+  font-weight: normal;
+  padding: 0 1.5%;
 }
 
 /*******************
@@ -136,10 +144,10 @@ nav a.selected {
 }
 
 #contact-email {
-  background: url(../img/mail.png);
+  background-image: url(../img/mail.png);
 }
 #contact-twitter {
-  background: url(../img/twitter.png);
+  background-image: url(../img/twitter.png);
 }
 
 /*******************
