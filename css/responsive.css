@@ -2,8 +2,8 @@
 @media screen and (min-width: 480px) {
   #gallery li {
     display: inline-block;
-    max-width: 44.5%;
-    margin: 2.5%;
+    max-width: 45%;
+    margin: calc(2.5% - 1px);
     vertical-align: top;
   }
 
@@ -63,6 +63,6 @@
   }
 
   #gallery li {
-    margin: 1.5%;
-    max-width: 29.5%;
+    margin: calc(1.5% - 1px);
+    max-width: 30%;
   }
